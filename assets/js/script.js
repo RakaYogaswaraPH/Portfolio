@@ -49,7 +49,7 @@ portfolioItems.forEach(item => {
 
 const jobTitles = [
     "IT Support",
-    "Junior Frontend Developer",
+    "Web Developer",
     "Fiber Optic Technician",
     "UI/UX Designer"
 ];

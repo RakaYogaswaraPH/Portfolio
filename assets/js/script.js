@@ -77,3 +77,27 @@ function changeJobTitle() {
 
 // Start animation
 setInterval(changeJobTitle, 3500);
+
+
+// Initialize Feather Icons
+feather.replace();
+
+// Set current year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Tooltip hover animation
+const socialLinks = document.querySelectorAll('.social-link');
+
+socialLinks.forEach(link => {
+    const tooltip = link.querySelector('.tooltip');
+
+    link.addEventListener('mouseenter', () => {
+        tooltip.classList.remove('opacity-0', '-top-10');
+        tooltip.classList.add('opacity-100', '-top-12');
+    });
+
+    link.addEventListener('mouseleave', () => {
+        tooltip.classList.remove('opacity-100', '-top-12');
+        tooltip.classList.add('opacity-0', '-top-10');
+    });
+});

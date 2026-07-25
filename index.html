@@ -22,10 +22,10 @@
     <div class="scanline"></div>
     <div id="reticle" class="reticle hidden rounded-full border border-line transition-transform duration-150 ease-out"></div>
     <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-        <div class="absolute inset-[-100%] bg-grid-pattern opacity-100"></div>
+        <div class="absolute -inset-full bg-grid-pattern opacity-100"></div>
     </div>
 
-    <div id="bootOverlay" class="fixed inset-0 z-[80] flex flex-col items-center justify-center bg-void border-8 border-line transition-opacity duration-700 px-4">
+    <div id="bootOverlay" class="fixed inset-0 z-80 flex flex-col items-center justify-center bg-void border-8 border-line transition-opacity duration-700 px-4">
         <p class="font-mono text-sm sm:text-base md:text-xl tracking-[0.3em] text-line uppercase mb-6 text-center">
             Logging In... <span class="typing-cursor"></span>
         </p>
@@ -89,7 +89,7 @@
                     <div id="heroName" class="opacity-0 transition-opacity duration-700 flex flex-col items-center lg:items-start w-full">
                         <h6 class="font-mono text-[11px] tracking-[0.3em] text-brass uppercase mb-2">Operator Profile</h6>
 
-                        <h1 data-text="RAKA YOGASWARA PRATAMA HUSAENI" class="glitch font-display font-black text-4xl sm:text-5xl lg:text-6xl leading-none text-line mb-6 break-words uppercase">
+                        <h1 data-text="RAKA YOGASWARA PRATAMA HUSAENI" class="glitch font-display font-black text-4xl sm:text-5xl lg:text-6xl leading-none text-line mb-6 wrap-break-word uppercase">
                             Raka Yogaswara<br>Pratama Husaeni
                         </h1>
 
@@ -126,7 +126,7 @@
                 <div class="hidden sm:block absolute -bottom-6 right-0 bg-panel border border-line px-3 py-1 font-mono text-[9px] tracking-widest text-line z-20 shadow-[2px_2px_0_#4e4e46]">
                     LAT: 6.9175 S<br>LNG: 107.6191 E
                 </div>
-                <div class="hidden sm:block absolute top-10 -left-4 bg-brass text-void px-2 py-0.5 font-mono font-bold text-[10px] tracking-widest z-20 rotate-[-90deg] origin-bottom-left">
+                <div class="hidden sm:block absolute top-10 -left-4 bg-brass text-void px-2 py-0.5 font-mono font-bold text-[10px] tracking-widest z-20 -rotate-90 origin-bottom-left">
                     ACTIVE
                 </div>
             </div>
